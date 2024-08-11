@@ -11,16 +11,75 @@
 
 body {
     height: 100vh;
-    font-size: "paragraph" 16px;
-    padding: 30px 30px;
-    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    padding: 30px 30px ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
 }
 
-.navHead {
-    display: flex;
-    justify-content: space-between;
+
+.a-nav:hover{color: green;}
+
+.first-nav a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    color: var(--Very-Dark-Blue);
+    margin-right: 20px;
+    
 }
+
+.logoFylo img{
+    width: 120px;
+}
+
+.first-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 20px;
+}
+
+.left-side{
+    grid-column: 1/2;
+}
+
+.form-1{
+    display: inline-flex;
+}
+
+.input-1{
+    margin-right: 20px;
+}
+
+.button-1 button{
+    width: 180px;
+    height:35px ;
+    background-color:var(--Bright-Blue);
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    border-color: var(--Bright-Blue);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.input-1 input{
+    width: 180px;
+    height: 35px;
+}
+
+button:hover{
+    opacity: 80%;
+}
+.right-side{
+    display: flex;
+    justify-content: center;
+}
+
+
+img{
+    width: 500px;
+} 
 
 .mainContainer {
     display: grid;
@@ -30,7 +89,8 @@ body {
         "second-section"
         "third-section"
         "foot";
-
+    gap: 20px ;
+    
 }
 
 .head {
@@ -39,6 +99,7 @@ body {
     align-items: center;
     grid-area: head;
 }
+
 
 .first-section {
     grid-area: first-section;
