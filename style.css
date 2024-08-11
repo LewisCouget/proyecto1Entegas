@@ -2,16 +2,18 @@
     --Very-Dark-Blue: hsl(243, 87%, 12%);
     --Desaturated-Blue: hsl(238, 22%, 44%);
     --Bright-Blue: hsl(224, 93%, 58%);
+    --Hover-Blue-Button: hsl(224, 100%, 71%);
     --Moderate-Cyan: hsl(170, 45%, 43%);
     --Light-Grayish-Blue: hsl(240, 75%, 98%);
     --Light-Gray: hsl(0, 0%, 75%);
 }
 
+
 body {
     height: 100vh;
-    font-size: 16px;
+    font-size: "paragraph" 16px;
     padding: 30px 30px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
 }
 
@@ -28,7 +30,7 @@ body {
         "second-section"
         "third-section"
         "foot";
-    gap: 20px;
+
 }
 
 .head {
@@ -46,10 +48,162 @@ body {
     grid-area: second-section;
 }
 
+
+/* THRID-SECTION */
 .third-section {
+    background-color: var(--Desaturated-Blue);
     grid-area: third-section;
 }
 
-.foot {
-    grid-area: foot;
+.third-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
 }
+
+.third-GetEarly {
+    width: 370px;
+}
+
+.third-Title {
+    margin: 0%;
+    font-size: 20px;
+    color: var(--Light-Grayish-Blue);
+}
+
+.third-Paragraph {
+    font-size: 12px;
+    color: var(--Light-Gray);
+}
+
+.third-Email {
+    margin: 0;
+    padding-right: 30px;
+}
+
+input {
+    display: flex;
+    border-radius: 2px;
+    border: 0;
+    width: 250px;
+    height: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    outline: 0;
+}
+
+button {
+    font-size: 10px;
+    color: white;
+    background-color: var(--Bright-Blue);
+    width: 120px;
+    border-radius: 2px;
+    border: 0;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: var(--Hover-Blue-Button);
+}
+
+button:active {
+    background-color: var(--Very-Dark-Blue);
+}
+
+/* THRID-SECTION */
+
+
+/* FOOT */
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-area: foot;
+    background-color: var(--Very-Dark-Blue);
+    color: white;
+    min-height: 225px;
+    font-size: 10px;
+}
+
+.iconoFylo {
+    width: 80px;
+    fill: white;
+}
+
+.logoFoot {
+    padding-top: 40px;
+}
+
+.pHover:hover {
+    color: var(--Hover-Blue-Button);
+}
+
+.aboutUs {
+    padding-top: 80px;
+}
+
+.ContactUs {
+    padding-top: 80px;
+}
+
+/* --> ICONOS <-- */
+.iconsFoot {
+    padding-top: 90px;
+    fill: white;
+}
+
+.iconPhoneCall {
+    filter: invert(93%) sepia(0%) saturate(3662%) hue-rotate(158deg) brightness(108%) contrast(91%);
+    width: 15px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.iconGmail {
+    filter: invert(93%) sepia(0%) saturate(3662%) hue-rotate(158deg) brightness(108%) contrast(91%);
+    width: 15px;
+    padding-right: 10px;
+}
+
+.iconsFoot {
+    display: flex;
+    flex-direction: row;
+    filter: invert(93%) sepia(0%) saturate(3662%) hue-rotate(158deg) brightness(108%) contrast(91%);
+}
+
+/* -->hoverFace<-- */
+.iconFace:hover {
+    filter: invert(67%) sepia(84%) saturate(4105%) hue-rotate(203deg) brightness(103%) contrast(101%);
+}
+
+.iconFace {
+    padding-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+/* -->hoverTwitter<-- */
+.iconTwitter:hover {
+    filter: invert(67%) sepia(84%) saturate(4105%) hue-rotate(203deg) brightness(103%) contrast(101%);
+}
+
+.iconTwitter {
+    padding-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+/* -->hoverInsta<-- */
+.iconInsta:hover {
+    filter: invert(67%) sepia(84%) saturate(4105%) hue-rotate(203deg) brightness(103%) contrast(101%);
+}
+
+.iconInsta {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* FOOT */
