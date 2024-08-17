@@ -12,50 +12,61 @@
 body {
     height: 100vh;
     font-size: 16px;
-    padding: 30px 30px ;
+    margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
 }
 
 
-.a-nav:hover{color: green;}
+.a-nav:hover {
+    color: green;
+}
 
-.first-nav a{
+.first-nav a {
     text-decoration: none;
     display: inline-block;
     padding: 20px;
     color: var(--Very-Dark-Blue);
     margin-right: 20px;
-    
+    font-family: "Raleway";
 }
 
-.logoFylo img{
+.logoFylo img {
+    padding-left: 30px;
     width: 120px;
 }
 
-.first-section{
+.first-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     margin-top: 20px;
+    padding-left: 70px
 }
 
-.left-side{
+.left-side {
+    max-width: 500px;
     grid-column: 1/2;
 }
 
-.form-1{
+.first-Title1 {
+    font-family: "Raleway";
+    font-size: 35px;
+    width: 550px;
+}
+
+.form-1 {
     display: inline-flex;
 }
 
-.input-1{
+.input-1 {
     margin-right: 20px;
 }
 
-.button-1 button{
-    width: 180px;
-    height:35px ;
-    background-color:var(--Bright-Blue);
+.button-1 button {
+    width: 160px;
+    height: 40px;
+    background-color: var(--Bright-Blue);
     color: white;
     border: 0;
     border-radius: 3px;
@@ -63,23 +74,29 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.input-1 input{
-    width: 180px;
-    height: 35px;
+.input-1 input {
+    width: 300px;
+    height: 40px;
+    outline: 0;
+    padding-left: 20px;
 }
 
-button:hover{
+button:hover {
     opacity: 80%;
 }
-.right-side{
+
+.right-side {
     display: flex;
     justify-content: center;
 }
 
-
-img{
+.img-Illustration1 {
     width: 500px;
-} 
+}
+
+/* img {
+    width: 500px;
+} */
 
 .mainContainer {
     display: grid;
@@ -89,8 +106,6 @@ img{
         "second-section"
         "third-section"
         "foot";
-    gap: 20px ;
-    
 }
 
 .head {
@@ -105,111 +120,143 @@ img{
     grid-area: first-section;
 }
 
+/* <-- SECOND-SECTION --> */
 .second-section {
-    grid-area: second-section;
-    position: relative;
-     }
-.imagen2 {
-      width: 600px;
-      left: 700px;
-      margin-top: 150px;
-      display:flex;
-      position: absolute;
-    }
- /* .imagen3  { */
-    /* width: 500px; */
-    /* height: 50px; */
-    /* display:flex; */
-    /* position:relative; */
-    /* z-index: -1; */
-    
-.texto1{
-    text-align: left;
-    width:100px;
-    height:50px;
-    padding: 10px;
-    margin-top:10px ;
     display: flex;
-    position: absolute;
-    z-index: 2;
-   }
-.btn {
-      font-family:" Ralewey ","Open Sans";
-        display:flex; 
-        align-items: center; ;
-        text-decoration: underline;
-        width:15%;
-        padding: 10px;
-        color:var(--Moderate-Cyan);
-   } 
-   a:hover{
-        background-color: var(--Moderate-Cyan );
-   }
-   .arrow {
-    width: 15px;
-    height: 15px;
-  }
-.texto2{
-    background-color: white;  
-    box-shadow: .1rem .1rem .9rem .2rem  rgba(92, 90, 90, 0.25);
-    width:350px;
-    height: 250px;
-    margin-left: 40px;
-    text-align: left;
-    padding:40px;
-  } 
-  .quotes{
-    width: 15px;
-    height: 15px;
-    display:flex;
-    position: absolute;
-   left:80px;
-   top: 450px;
-    }
-.avatar{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    display: flex;
-    position: absolute;
-    left: 80px;
-    top: 625px;
-  }
-  h4{
-    margin-left: 45px;
-    margin-bottom: 2px;
-  }
-h6{
-    margin-left: 45px;
-    margin-top: 3px;
-    font-weight: normal;
-   }
+    padding-left: 70px;
+    padding-bottom: 120px;
+    /* background: no-repeat url(./images/bg-curve-desktop.svg); */
 
-/* THRID-SECTION */
-.third-section {
-    background-color: var(--Desaturated-Blue);
-    grid-area: third-section;
 }
 
+
+/* TEXT-1 */
+
+
+.second-Text1 {
+
+    background-color: var(--Light-Grayish-Blue);
+    margin-bottom: 50px;
+}
+
+.second-Title1 {
+    font-family: "Raleway";
+    font-size: 35px;
+    width: 600px;
+}
+
+.paragraph-Text1 {
+    width: 510px;
+}
+
+.button-Text1 {
+    text-decoration: underline;
+}
+
+.button-Text1-SeeHow {
+    color: var(--Moderate-Cyan);
+    text-decoration: underline;
+}
+
+.button-Text1-SeeHow:hover {
+    color: var(--Hover-Blue-Button);
+}
+
+.arrow {
+    width: 15px;
+}
+
+.arrow:hover {
+    filter: invert(75%) sepia(66%) saturate(5024%) hue-rotate(199deg) brightness(99%) contrast(103%);
+}
+
+/* TEXT-1 */
+
+
+/* TEXT-2 */
+.second-Text2 {
+    font-size: 17px;
+    padding: 40px 50px 40px 50px;
+    max-width: 340px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.second-Part2 {
+    align-content: center;
+}
+
+.quotes {
+    line-height: 0;
+    width: 18px;
+}
+
+
+/* KYLE-BURTON */
+
+.cajaFather-KyleBurton {
+    display: flex;
+    flex-direction: row;
+}
+
+.cajaAvatar {
+    align-content: center;
+}
+
+.avatar {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.cajaNameKyle {
+    line-height: 0;
+    padding-left: 10px;
+}
+
+.text-Kyle {
+    font-size: 13px;
+    line-height: 0;
+}
+
+/* KYLE-BURTON */
+
+
+/* TEXT-2 */
+
+
+.illustration2 {
+    padding-left: 100px;
+    width: 500px;
+}
+
+/* <-- SECOND-SECTION --> */
+
+/* THRID-SECTION */
+
 .third-section {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    background-color: var(--Desaturated-Blue);
+    grid-area: third-section;
+    padding: 0 70px 0 70px;
 }
 
 .third-GetEarly {
-    width: 370px;
+    align-content: center;
+    max-width: 480px;
+    height: 300px;
 }
 
 .third-Title {
-    margin: 0%;
-    font-size: 20px;
+    font-family: "Raleway";
+    font-size: 35px;
     color: var(--Light-Grayish-Blue);
 }
 
 .third-Paragraph {
-    font-size: 12px;
     color: var(--Light-Gray);
 }
 
@@ -218,21 +265,22 @@ h6{
     padding-right: 30px;
 }
 
-input {
+.input-Gmail {
     display: flex;
     border-radius: 2px;
     border: 0;
-    width: 250px;
-    height: 25px;
+    width: 370px;
+    height: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     outline: 0;
+    padding-left: 20px;
 }
 
 button {
-    font-size: 10px;
     color: white;
     background-color: var(--Bright-Blue);
-    width: 120px;
+    width: 160px;
+    height: 40px;
     border-radius: 2px;
     border: 0;
     padding: 10px;
@@ -255,21 +303,25 @@ button:active {
 .foot {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     grid-area: foot;
     background-color: var(--Very-Dark-Blue);
     color: white;
-    min-height: 225px;
-    font-size: 10px;
+    padding: 40px 120px 50px 70px;
 }
 
 .iconoFylo {
-    width: 80px;
+    width: 120px;
     fill: white;
 }
 
 .logoFoot {
     padding-top: 40px;
+
+}
+
+.pHover {
+    color: var(--Light-Gray);
 }
 
 .pHover:hover {
@@ -287,19 +339,20 @@ button:active {
 /* --> ICONOS <-- */
 .iconsFoot {
     padding-top: 90px;
+    padding-right: 90px;
     fill: white;
 }
 
 .iconPhoneCall {
     filter: invert(93%) sepia(0%) saturate(3662%) hue-rotate(158deg) brightness(108%) contrast(91%);
-    width: 15px;
+    width: 20px;
     padding-right: 10px;
     padding-top: 10px;
 }
 
 .iconGmail {
     filter: invert(93%) sepia(0%) saturate(3662%) hue-rotate(158deg) brightness(108%) contrast(91%);
-    width: 15px;
+    width: 20px;
     padding-right: 10px;
 }
 
@@ -316,8 +369,8 @@ button:active {
 
 .iconFace {
     padding-right: 5px;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 /* -->hoverTwitter<-- */
@@ -327,8 +380,8 @@ button:active {
 
 .iconTwitter {
     padding-right: 5px;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 /* -->hoverInsta<-- */
@@ -337,8 +390,8 @@ button:active {
 }
 
 .iconInsta {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 
